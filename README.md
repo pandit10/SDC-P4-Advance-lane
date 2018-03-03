@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
+### Here I will elaborate the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
 
@@ -32,7 +32,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
 
-You're reading it!
+The writeup is provided
 
 ### Camera Calibration
 
@@ -96,7 +96,7 @@ I verified that my perspective transform was working as expected by drawing the 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-After undistorting the image, extracting binary data, and applying perspective transform, the next required step is to extract pixels that are associated to lane lines. This was done using the sliding window search, with the start point taken as the histogram peak of the lower imaege half shown in the figure below.
+Undistorting the image, extracting binary data, and applying perspective transform, the next required step is to extract pixels that are associated to lane lines. This was done using the sliding window search, with the start point taken as the histogram peak of the lower imaege half shown in the figure below.
 ![alt text][image7]
 
 Then I fit my detected lane pixels with a 2nd order polynomial as show in the below figure:
@@ -107,7 +107,7 @@ This is done in the function `find_lanes()` in the code lines 197 through 271 in
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I also did this in the function `find_lanes()` in the code lines 279 through 289 in my code in `P4.py` by defining conversions in x and y from pixels space to meters, fitting new polynomials in the world space and calculating their new radii of curvature.
+I did this in the function `find_lanes()` in the code lines 280 through 289 in my code in `P4.py` by defining conversions in x and y from pixels space to meters, fitting new polynomials in the world space and calculating their new radii of curvature.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
