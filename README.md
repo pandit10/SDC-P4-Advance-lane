@@ -107,7 +107,7 @@ This is done in the function `find_lanes()` in the code lines 197 through 271 in
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in the function `find_lanes()` in the code lines 280 through 289 in my code in `P4.py` by defining conversions in x and y from pixels space to meters, fitting new polynomials in the world space and calculating their new radii of curvature.
+I did this in the function `find_lanes()` in the code lines 280 through 290 in my code in `P4.py` by defining conversions in x and y from pixels space to meters, fitting new polynomials in the world space and calculating their new radii of curvature.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
